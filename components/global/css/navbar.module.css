@@ -1,0 +1,44 @@
+/* DEFAULT ROOT */
+.root {
+  padding: 15px 60px;
+  height: 60px;
+  border-bottom: 1px solid #80808042;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  font-family: "Assistant";
+  flex-basis: 20%;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+}
+
+.active {
+  font-size: 19px;
+  font-weight: 900;
+  padding-top: -5px;
+}
+.active::after {
+  content: "";
+  position: absolute;
+  left: 30%;
+  width: 40%;
+  height: 100%;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgb(160, 138, 138);
+}
+
+@media (max-width: 1280px) {
+  /* md */
+}
+
+@media (max-width: 960px) {
+  /* sm */
+}
+
+@media (max-width: 600px) {
+  /* xs */
+}
