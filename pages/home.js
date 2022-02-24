@@ -4,17 +4,21 @@ import dynamic from "next/dynamic";
 import Head from "../components/global/Head";
 import { FullBackdrop } from "../components/global/BackDrop";
 
-const Home = dynamic(() => import("../components/Home"), {
-  loading: () => <FullBackdrop />,
-});
+const Home = dynamic(() =>
+    import ("../components/Home"), {
+        loading: () => < FullBackdrop / > ,
+    });
 
 export default function Indx() {
-  return (
-    <div>
-      <Head title="Water Reuse | Home" />
-      <Home />
+    return ( <
+        div >
+        <
+        Head title = 'Water Reuse | Home' / >
+        <
+        Home / >
 
-      <style jsx global>{`
+        <
+        style jsx global > { `
         * {
           margin: 0;
           padding: 0;
@@ -32,7 +36,7 @@ export default function Indx() {
           scrollbar-width: none; /* Firefox */
           text-rendering: optimizeLegibility;
         }
-      `}</style>
-    </div>
-  );
+      ` } < /style> <
+        /div>
+    );
 }

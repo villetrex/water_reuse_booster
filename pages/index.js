@@ -4,17 +4,21 @@ import dynamic from "next/dynamic";
 import Head from "../components/global/Head";
 import { FullBackdrop } from "../components/global/BackDrop";
 
-const LandingPage = dynamic(() => import("../components/LandingPage"), {
-  loading: () => <FullBackdrop />,
-});
+const LandingPage = dynamic(() =>
+    import ("../components/LandingPage"), {
+        loading: () => < FullBackdrop / > ,
+    });
 
 export default function Indx() {
-  return (
-    <div>
-      <Head title="Welcome" />
-      <LandingPage />
+    return ( <
+        div >
+        <
+        Head title = 'Welcome' / >
+        <
+        LandingPage / >
 
-      <style jsx global>{`
+        <
+        style jsx global > { `
         * {
           margin: 0;
           padding: 0;
@@ -32,7 +36,7 @@ export default function Indx() {
           scrollbar-width: none; /* Firefox */
           text-rendering: optimizeLegibility;
         }
-      `}</style>
-    </div>
-  );
+      ` } < /style> <
+        /div>
+    );
 }
